@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EBill</string>
+    <string name="field">field</string>
+    <string name="service">service</string>
+    <string name="time">time</string>
+</resources>

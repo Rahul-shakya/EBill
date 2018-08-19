@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "92334881060",
+    "firebase_url": "https://ebill-4e934.firebaseio.com",
+    "project_id": "ebill-4e934",
+    "storage_bucket": "ebill-4e934.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92334881060:android:92c18f84d36aee24",
+        "android_client_info": {
+          "package_name": "com.example.asus.ebill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92334881060-143tn6qvl91sgghple9spodc7e05t4jd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.ebill",
+            "certificate_hash": "26baccc12b1a631ef4a23e241f89240298d66476"
+          }
+        },
+        {
+          "client_id": "92334881060-lms8363q9hgitpdbk582g24m30sh6ck9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfkipZwX_Gx4tKzftJTYO20LZnhByYaB4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92334881060-lms8363q9hgitpdbk582g24m30sh6ck9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
