@@ -66,8 +66,8 @@ public class OrderProfileActivity extends AppCompatActivity {
         rate=findViewById(R.id.tv2);
         tax=findViewById(R.id.tv4);
         grand_total=findViewById(R.id.tv6);
-        s_time=findViewById(R.id.tv10);
-        e_time=findViewById(R.id.tv2);
+        s_time=findViewById(R.id.tv8);
+        e_time=findViewById(R.id.tv10);
         pay_status=findViewById(R.id.tv12);
         profile_image=findViewById(R.id.pro_image);
         serv_for=findViewById(R.id.tv14);
