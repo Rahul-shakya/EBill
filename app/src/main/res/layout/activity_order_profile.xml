@@ -349,7 +349,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView17"
+                        android:id="@+id/tv14"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -374,7 +374,7 @@
                         android:textColor="@android:color/background_dark"/>
 
                     <TextView
-                        android:id="@+id/textView16"
+                        android:id="@+id/tv16"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -389,7 +389,7 @@
                     android:padding="5dp">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@android:color/holo_red_dark"

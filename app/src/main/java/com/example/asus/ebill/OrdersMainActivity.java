@@ -80,6 +80,7 @@ public class OrdersMainActivity extends AppCompatActivity {
                 holder.setImage(model.image);
 
                 final String user_id=getRef(position).getKey();
+                final String field= model.field;
 
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -87,6 +88,7 @@ public class OrdersMainActivity extends AppCompatActivity {
 
                         Intent profile_intent=new Intent(OrdersMainActivity.this,OrderProfileActivity.class);
                         profile_intent.putExtra("user_id",user_id);
+                        profile_intent.putExtra("tag_field",field);
                         startActivity(profile_intent);
 
 
