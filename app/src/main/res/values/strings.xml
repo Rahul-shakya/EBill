@@ -3,4 +3,5 @@
     <string name="field">field</string>
     <string name="service">service</string>
     <string name="time">time</string>
+    <string name="status">status</string>
 </resources>

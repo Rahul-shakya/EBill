@@ -5,6 +5,17 @@ public class Orders {
     public String field;
     public String time;
     public String service;
+    public String status;
+    public String image;
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getStatus() {
+
+        return status;
+    }
 
     public void setFieldt(String field) {
         this.field = field;
@@ -29,5 +40,13 @@ public class Orders {
 
     public String getServicet() {
         return service;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

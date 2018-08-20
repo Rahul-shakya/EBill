@@ -1,5 +1,6 @@
 package com.example.asus.ebill;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -10,12 +11,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class OrdersMainActivity extends AppCompatActivity {
 
@@ -27,7 +30,7 @@ public class OrdersMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orders_main);
 
-        mToolbar=(Toolbar)findViewById(R.id.orders_appBar);
+        mToolbar=findViewById(R.id.orders_appBar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("My Orders");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -73,14 +76,20 @@ public class OrdersMainActivity extends AppCompatActivity {
                 holder.setFieldt(model.field);
                 holder.setTimet(model.time);
                 holder.setServicet(model.service);
+                holder.setStatus(model.status);
+                holder.setImage(model.image);
 
-                final String id=getRef(position).getKey();
+                final String user_id=getRef(position).getKey();
 
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
-                        Toast.makeText(OrdersMainActivity.this,"Id is "+id,Toast.LENGTH_LONG).show();
+                        Intent profile_intent=new Intent(OrdersMainActivity.this,OrderProfileActivity.class);
+                        profile_intent.putExtra("user_id",user_id);
+                        startActivity(profile_intent);
+
+
 
                     }
                 });
@@ -127,6 +136,18 @@ public class OrdersMainActivity extends AppCompatActivity {
             TextView orderService=mView.findViewById(R.id.service);
             orderService.setText(service);
 
+        }
+
+        public void setStatus(String status) {
+
+            TextView orderService=mView.findViewById(R.id.status);
+            orderService.setText(status);
+
+        }
+
+        public void setImage(String image) {
+            CircleImageView userImageView=mView.findViewById(R.id.pro_pic);
+            Picasso.get().load(image).placeholder(R.drawable.pic).into(userImageView);
         }
 
 
